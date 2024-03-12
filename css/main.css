@@ -1,0 +1,584 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* https://i.gifer.com/OwRt.gif */
+    /* --body-bg: #0e0837; */
+    --body-bg-color: #0e0837;
+    --white-color: #ffffff;
+    --maroon-color: #460C3A;
+    --dark-purple-color: #2B0F47;
+    --dark-blue: #0E0829;
+    --shoking-pink: #AA1072;
+    --primary-color: #D61361;
+    --btn-green-bg: #198754;
+    --btn-blue-bg: #0567F3;
+    --btn-red-bg: #dc3545;
+    --btn-dark-red-bg: #bb2d3b;
+    --pink-color: #d63384;
+    --orange-color: #ffa500;
+    --red-color: #ff0000;
+    --blue-color: #0693e3;
+    --purple-color: #9b51e0;
+    --dark-green-btn-bg: #157347;
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--body-bg-color) ;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--white-color);
+    line-height: 1.4;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: var(--white-color);
+    line-height: 2.8;
+}
+
+p{
+    color: var(--white-color);
+    line-height: 1.4;
+
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    color: var(--white-color);
+    cursor: pointer;
+}
+.btn{
+    display: inline-block;
+}
+main{
+    margin: 0 auto;
+    padding-top: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+/* BANNER CSS START */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+h3{
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 48px;
+    font-weight: 500;
+    background-image: url(https://i.gifer.com/OwRt.gif);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+h4{
+    color: var(--primary-color);
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+p{
+    margin-bottom: 15px;
+}
+.music-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+li{
+    transition: all 0.3s;
+}
+.music-icons li:hover{
+    cursor: pointer;
+    background: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    scale: 1.3;
+}
+.discover-btn{
+    background: var(--btn-blue-bg);
+    
+}
+.discover-btn a{
+    padding: 18px 30px;
+    border: transparent; 
+}
+figure{
+    width: 40%;
+}
+
+/* BANNER CSS END */
+
+/* TOURS & EVENTS CSS START */
+.tourEvents-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.events-outer{
+    max-width: 60%;
+    padding-top: 70px;
+}
+.events-outer h2{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.events-inner{
+    display:flex;
+}
+.inner-box{
+    background: #100726;
+    padding: 50px 20px;
+    border-radius: 5px;
+
+}
+.inner-box h3,h4{
+    color: var(--white-color);
+}
+.inner-box h3{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.inner-box h4{
+    margin-bottom: 40px;
+}
+.learn-more-btn{
+    background: var(--btn-red-bg);
+    border-radius: 4px;
+    transition: all 0.3s;
+   
+    
+}
+.learn-more-btn a{
+    padding: 18px 20px;
+    border: transparent;
+}
+.learn-more-btn:hover{
+    background: linear-gradient(115deg,var(--btn-red-bg), var(--pink-color));
+    transform: translateY(-10px);
+    border-radius: 4px;
+}
+.tour-card-outer{
+    width: 35%;
+    background: linear-gradient(135deg, 
+    rgb(254, 205, 165) 0%, 
+    rgb(254, 45, 45) 50%, 
+    rgb(107, 0, 62) 100%);
+    padding: 40px;
+}
+.animate-img{
+    transition: transform 0.8s linear, border-radius 0.8s linear;
+}
+ .animate:hover .animate-img{
+    transform: translate(200px, -200px);
+    border-radius: 50%;
+ }
+
+.animate:hover .img-describe{
+    transform: translateY(-100px);
+}
+.img-describe{
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.9s linear;
+}
+.img-describe h2{
+    font-size: 42px;
+    font-weight: 400;
+}
+.img-describe h4{
+    color: var(--white-color);
+}
+/* TOURS & EVENTS CSS END */
+
+
+/* DJ NIGHT CLUB CSS START */
+.dj-nightclub{
+    margin-bottom: 50px;
+}
+.dj-title {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+.dj-title h2 {
+    font-size: 40px;
+    line-height: 1.9;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.dj-music-bg{
+    position: relative;
+}
+.play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.play-icon a {
+    font-size: 18px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 11px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* DJ NIGHT CLUB CSS END */
+
+/* ABOUT US CSS START */
+.about-main{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 200px;
+}
+.about-title{
+    width: 45%;
+}
+.about-title h2{
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about-title h3{
+    font-size: 40px;
+    color: var(--white-color);
+}
+.about-description{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-description p:first-child{
+    margin-bottom: 28px !important;
+}
+.about-description p:last-child{
+    margin-bottom: 0px !important;
+}
+/* ABOUT US CSS END */
+
+/* TRACK LIST CSS START */
+.track-list-sec{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,7)),url(../assets/images/sound-equipment-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 200px;
+}
+.tracklist-outerbox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.tracklist-innerbox {
+    width: 48%;
+}
+.tracklist-innerbox h2{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 28px;
+}
+.album-img {
+    max-width: 85%;
+}
+.music-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(70, 12, 58), #0E0829, #2B0F47);
+    padding: 25px 40px;
+}
+
+.music-play-icon {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-grow: 0.02;
+}
+.card-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.2;
+    align-items: center;
+}
+.playing-time {
+    flex-grow: 0.4;
+}
+.music-icons-list {
+    display: flex;
+    flex-grow: 0.7;
+    justify-content: space-between;
+}
+
+.new-releaseList {
+    width: 48%;
+    padding: 25px 40px;
+    background: linear-gradient(-50deg, rgb(70, 12, 58), #0E0829, #2B0F47);
+}
+.new-releaseList h2{
+    font-size: 38px;
+}
+.new-releaseList h4{
+    font-size: 28px;
+}
+.new-releaseList h3{
+    font-size: 28px;
+}
+.new-releaseList .music-icons {
+    max-width: 80%;
+    margin: 0px auto 20px;
+}
+.album-cards {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.icon {
+    flex-grow: 0.1;
+    display: flex;
+}
+.icon a {
+    font-size: 18px;
+    display: flex;
+    background: linear-gradient(135deg, var(--blue-color), var(--purple-color));
+    border-radius: 50%;
+    padding: 10px 13px;
+}
+.album-detail h3,
+.album-detail p{
+    margin-bottom: 0;
+    color: var(--white-color);
+    font-size: 18px;
+}
+/* TRACK LIST CSS END */
+
+
+/* UPCOMING SHOWS LIVE CONCERTS CSS START */
+.upcoming-concerts-sec{
+    margin-bottom: 50px;
+}
+.upcoming-concerts-sec h2,
+.upcoming-concerts-sec h3 {
+    width: max-content;
+    margin: auto;
+}
+.upcoming-concerts-sec h2{
+    font-weight: 500;
+    font-size: 42px;
+}
+.upcoming-shows {
+    display: flex;
+    flex-direction: column;
+}
+.concerts-cards {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #460C3A, #0E0829, #2B0F47);
+    padding: 30px 40px;
+}
+.concerts-cards:hover{
+    background: linear-gradient(45deg, #460C3A, #0E0829, #2B0F47);
+}
+.card-first-row,
+.card-second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.concertcard-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    align-items: center;
+}
+.card-icon {
+    padding: 15px;
+}
+.card-icon a{
+    background: var(--pink-color);
+    padding: 18px;
+}
+.concert-date span{
+    color: var(--white-color);
+    font-size: 24px;
+}
+.concert-name h4{
+    font-size: 28px;
+}
+.concert-time span{
+    font-size: 20px;
+    color: var(--white-color);
+}
+.ticket-btn a{
+    background: var(--btn-green-bg);
+    padding: 11px 15px;
+    border-radius: 4px;
+}
+.ticket-btn a:hover{
+    background: var(--dark-green-btn-bg);
+}
+/* UPCOMING SHOWS LIVE CONCERTS CSS END */
+
+/* SLIEDR CSS START*/
+.slider-container {
+    width: 90%;
+    margin: 0 auto 50px;
+    overflow: hidden;
+}
+.slider-container h2{
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.images-slide {
+    overflow: hidden;
+    background: var(--white-color);
+   
+}
+.images-slide:hover .singers{
+    animation-play-state: paused;
+} 
+.singers{
+    display: inline-block;
+    white-space: nowrap;
+    animation: 5s slide infinite linear;
+   
+}
+.singers img{
+    width:15%;
+}
+
+
+/* SLIDER CSS END */
+
+/* SPONSOR CSS START */
+.sponsor-outer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.sponsor-outer h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.sponsor-outer h3{
+    font-size: 38px;
+}
+.support-box{
+    display: flex;
+}
+.card-img{
+    max-width: 20%;
+}
+/* SPONSOR CSS END */
+
+/* FOOTER CSS START */
+.footer-outer{
+    width: 65%;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo-sec{
+    max-width: 30%;
+    border: 12px solid var(--primary-color);
+    box-shadow: 0px 0px 33px 0px var(--primary-color), 0px 0px 33px 0px var(--primary-color) inset;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+.logo-content{
+    margin-bottom: 15px;
+}
+.footer-social-icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 45%;
+    /* margin: auto; */
+}
+.footer-social-icons li {
+    font-size: 22px;
+}
+.footer-nav {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-aboutus,
+.footer-support {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+.title {
+    position: relative;
+    flex-grow: 0.15;
+}
+.title h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.title::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(to right, var(--red-color), var(--orange-color));
+    opacity: 0.7;
+    left: 0;
+}
+.about-list, 
+.support-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 0.3;
+    /* cursor: pointer; */
+}
+.footer-list li a{
+    line-height: 0;
+}
+.footer-list li a:hover{
+    background: linear-gradient(78deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 72%, rgb(254, 205, 165) 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* FOOTER CSS END */
